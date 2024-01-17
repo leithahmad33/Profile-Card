@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+/* start profile card */
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.body .card {
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 15px #00000052;
+    width: 375px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.body .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background-color: #0e4eff;
+}
+
+.body .card img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+    outline: 4px solid #0e4eff;
+}
+
+.body .card .text {
+    text-align: center;
+}
+
+.body .card .text h2 {
+    font-weight: 500;
+}
+
+.body .card .text p {
+    color: #777;
+}
+
+.body .card .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px 0;
+}
+
+.body .card .icons i {
+    margin-bottom: 20px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 18px;
+    width: 10px;
+    height: 10px;
+    margin-right: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+.body .card .icons .fa-facebook-f {
+    background-color: #4267B2;
+    color: white;
+}
+
+.body .card .icons .fa-facebook-f:hover {
+    box-shadow: 0 0 10px blue, 0 0 3px white;
+}
+
+.body .card .icons .fa-twitter {
+    background-color: #1DA1F2;
+    color: white;
+}
+
+.body .card .icons .fa-twitter:hover {
+    box-shadow: 0 0 10px #119aef, 0 0 3px white;
+}
+
+.body .card .icons .fa-instagram {
+    background-color: #E1306C;
+    color: white;
+}
+
+.body .card .icons .fa-instagram:hover {
+    box-shadow: 0 0 10px #eb2a6a, 0 0 3px white;
+}
+
+.body .card .icons .fa-youtube {
+    background-color: #FF0000;
+    color: white;
+}
+
+.body .card .icons .fa-youtube:hover {
+    box-shadow: 0 0 10px #FF0000, 0 0 3px white;
+}
+
+.body .card .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body .card a {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 28px;
+    background-color: #1654ff;
+    color: white;
+    border-radius: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.body .card .footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 15px 15px;
+}
+
+.body .card .footer li {
+    position: relative;
+}
+
+.body .card .footer li:not(:last-child):before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -19px;
+    width: 1px;
+    height: 16px;
+    background-color: black;
+    transform: translatey(-50%);
+}
+
+.body .card .footer li span {
+    font-size: 18px;
+}
+
+.body .card .footer li i {
+    font-size: 18px;
+}
+
+/* end profile card */
+/* start animaition */
+
+/* end animaition */
